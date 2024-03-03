@@ -58,7 +58,7 @@ class TestCashRegister:
         self.cash_register_with_discount.add_item("macbook air", 1000)
         self.cash_register_with_discount.apply_discount()
         assert self.cash_register_with_discount.last_transaction_amount == 800
-        ##self.reset_register_totals()
+        self.reset_register_totals()
 
     def test_apply_discount_success_message(self):
         '''Prints success message with updated total.'''
